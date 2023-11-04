@@ -54,7 +54,7 @@ likelion-8 HTML/CSS homework
 
 
 
-### CSS
+## CSS
 ---
 1. 변수 지정
 
