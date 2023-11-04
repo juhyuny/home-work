@@ -30,7 +30,7 @@ https://juhyuny.github.io/home-work/mission-01/mission01.html
 
 3. logo 하단의 있는 글을 해당 카드의 헤딩역할로 h3 태그로 마크업.
 4. 큰 아이템과 작은아이템의 구조 차이
-  - 큰 아이템 : 왼쪽에 배치될 img와 h3를 item-title로 묶음.
+  - 큰 아이템 : 왼쪽에 배치될 img와 h3를 .item-title로 묶음.
 
 ```
     <div class="item-title">
@@ -52,7 +52,7 @@ https://juhyuny.github.io/home-work/mission-01/mission01.html
 ```
 
 
-5. hover 전/후 버튼을 span.bth-list로 묶음.
+5. hover 전/후 버튼을 span.btn-list로 묶음.
 
 ```
     <span class="btn btn-list">
@@ -138,7 +138,7 @@ https://juhyuny.github.io/home-work/mission-01/mission01.html
     }
 ```
 
-5. item을 hover했을 때 적용되는 style
+5. item을 hover, focus 됐을 때 적용되는 style
 
 ```
     /* 아이템의 border 변화 */
@@ -147,9 +147,10 @@ https://juhyuny.github.io/home-work/mission-01/mission01.html
     }
 
     /* 구매하기 버튼 보이기 */
-    .item:hover .buy-btn {
-      display: flex;
-    }
+   /* li.a에 focus 될 때도 구매하기 버튼 보이기 */
+    .item:hover .buy-btn, .item:focus .buy-btn {
+     display: flex;
+   }
 ```
 
 
