@@ -138,7 +138,7 @@ li {
   border: 1px solid var(--blue-600);
 }
 
-.item:hover .buy-btn {
+.item:hover .buy-btn, .item:focus .buy-btn {
   display: flex;
 }
 
