@@ -5,11 +5,12 @@ likelion-8 HTML/CSS homework
 ## HTML 마크업 
 ---
 ### 구조
-![HTML:CSS 과제-마크업 구조](https://github.com/juhyuny/home-work/assets/141771716/2cf4936b-10c2-400a-bae6-3f7d8c33e76f)
+![HTML:CSS 과제-마크업 구조](https://github.com/juhyuny/home-work/assets/141771716/f2b6e1d8-5a4c-4673-a514-fca7878b6c62)
 
 
 ### 마크업
-![HTML:CSS 과제-마크업](https://github.com/juhyuny/home-work/assets/141771716/61203a20-167a-4756-88f1-17854a551c42)
+![HTML:CSS 과제-마크업](https://github.com/juhyuny/home-work/assets/141771716/6b9905d8-f3be-42cd-8283-2af671816cf0)
+
 
 
 
