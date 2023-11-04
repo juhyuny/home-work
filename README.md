@@ -3,6 +3,7 @@ likelion-8 HTML/CSS homework
 
 
 ## HTML 마크업 구조
+---
 ![HTML:CSS 과제-마크업 구조](https://github.com/juhyuny/home-work/assets/141771716/2cf4936b-10c2-400a-bae6-3f7d8c33e76f)
 
 
@@ -52,10 +53,10 @@ likelion-8 HTML/CSS homework
 ```
 
 
----
-### CSS
 
-1. 변수 지정
+### CSS
+---
+1. 변수 지정
 
 ```
     :root {
@@ -71,10 +72,12 @@ likelion-8 HTML/CSS homework
 
 
 2. item들 배치방법
+
+
    .item-container에
-       - flex 적용
-       - 가로 지정
-       - 가로값이 넘으면 줄내림이 되도록 flex-wrap:wrap 적용
+   - flex 적용
+   - 가로 지정
+   - 가로값이 넘으면 줄내림이 되도록 flex-wrap:wrap 적용
 
 ```
     .item-container {
