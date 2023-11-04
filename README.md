@@ -23,7 +23,7 @@ https://juhyuny.github.io/home-work/mission-01/mission01.html
 1. article 태그를 사용하고 임의의 heading을 추가하여 .sr-only로 숨김 처리.
 2. 마우스를 올리고 hover되는 영역이 한 li영역의 전체라는 것을 보여주기 위해 a 태그로 li 내부의 있는 모든 태그를 감쌈.
    
-```
+```css
     <li><a href="/"></a></li>
 ```
 
@@ -32,7 +32,7 @@ https://juhyuny.github.io/home-work/mission-01/mission01.html
 4. 큰 아이템과 작은아이템의 구조 차이
   - 큰 아이템 : 왼쪽에 배치될 img와 h3를 .item-title로 묶음.
 
-```
+```css
     <div class="item-title">
       <img />
       <h3></h3>
@@ -44,7 +44,7 @@ https://juhyuny.github.io/home-work/mission-01/mission01.html
 
   - 작은 아이템 
 
-```
+```css
     <img />
     <h3></h3>
     <img />
@@ -54,7 +54,7 @@ https://juhyuny.github.io/home-work/mission-01/mission01.html
 
 5. hover 전/후 버튼을 span.btn-list로 묶음.
 
-```
+```css
     <span class="btn btn-list">
         <img src="images/button.png" alt="~바로가기" />
         <span class="buy-btn">
@@ -70,7 +70,7 @@ https://juhyuny.github.io/home-work/mission-01/mission01.html
 ---
 1. 변수 지정
 
-```
+```css
     :root {
       --basic-height: 310px;
       --blue-600: #0074E9;
@@ -91,7 +91,7 @@ https://juhyuny.github.io/home-work/mission-01/mission01.html
    - 가로 지정
    - 가로값이 넘으면 줄내림이 되도록 flex-wrap:wrap 적용
 
-```
+```css
     .item-container {
       width: 502px;
       display: flex;
@@ -104,7 +104,7 @@ https://juhyuny.github.io/home-work/mission-01/mission01.html
 
 3. 버튼 리스트(hover 전 이미지와 hover 후 버튼) 가로로 나열 후 위치 지정
 
-```
+```css
     /* 버튼 리스트(.btn-list) 기준점을 item 으로 지정 */
     .item {position:relative;}
 
@@ -119,7 +119,7 @@ https://juhyuny.github.io/home-work/mission-01/mission01.html
 
 4. hover 전 버튼과 hover 후 버튼이 겹치도록 위치 조정
 
-```
+```css
     .buy-btn {
       display: none;
       justify-content: space-between;
@@ -140,7 +140,7 @@ https://juhyuny.github.io/home-work/mission-01/mission01.html
 
 5. item을 hover, focus 됐을 때 적용되는 style
 
-```
+```css
     /* 아이템의 border 변화 */
     .item:hover {
       border: 1px solid var(--blue-600);
