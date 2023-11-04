@@ -147,9 +147,10 @@ https://juhyuny.github.io/home-work/mission-01/mission01.html
     }
 
     /* 구매하기 버튼 보이기 */
-    .item:hover .buy-btn {
-      display: flex;
-    }
+   /* li.a에 focus 될 때도 구매하기 버튼 보이기 */
+    .item:hover .buy-btn, .item:focus .buy-btn {
+     display: flex;
+   }
 ```
 
 
