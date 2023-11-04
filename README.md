@@ -119,8 +119,10 @@ likelion-8 HTML/CSS homework
       background-color: var(--blue-600);
       color: #fff;
       font-size: 0.875rem;
+
       /* margin 마이너스 값으로 버튼만큼 위치 당기기 */
       margin-left: -42px;
+
     }
 ```
 
@@ -136,11 +138,6 @@ likelion-8 HTML/CSS homework
     .item:hover .buy-btn {
       display: flex;
     }
-
-
-
-
-
-
+```
 
 
