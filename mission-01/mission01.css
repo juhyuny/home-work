@@ -74,13 +74,14 @@ li {
 }
 .big-item {
   width: 502px;
+  height: var(--basic-height);
   padding: 20px 28px;
   justify-content: space-between;
 }
 
 .small-item {
   width: 243px;
-  height: 310px;
+  height: var(--basic-height);
   padding: 0.875rem;
   flex-direction: column;
   justify-content: space-between;
@@ -111,16 +112,12 @@ li {
 
 /* item button */
 .btn-list {
+  display: flex;
   position: absolute;
   left: 20px;
   bottom: 20px; 
 }
 
-.btn {
-  display: inline-block;
-  /* margin: 0; */
-  display: flex;
-}
 
 .buy-btn {
   display: none;
