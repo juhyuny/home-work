@@ -138,7 +138,7 @@ https://juhyuny.github.io/home-work/mission-01/mission01.html
     }
 ```
 
-5. item을 hover했을 때 적용되는 style
+5. item을 hover, focus 됐을 때 적용되는 style
 
 ```
     /* 아이템의 border 변화 */
