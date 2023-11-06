@@ -134,11 +134,8 @@ li {
 }
 
 /* item hover */
-.item:hover {
+.item:hover .buy-btn, 
+.item:hover{
   border: 1px solid var(--blue-600);
-}
-
-.item:hover .buy-btn, .item:focus .buy-btn {
   display: flex;
 }
-
