@@ -2,14 +2,14 @@ https://juhyuny.github.io/home-work/mission-01/mission01.html
 ---
 
 
-# HTML 마크업 
+# 1차 HTML 마크업 
 ---
 ### 구조
-![HTML:CSS 과제-마크업 구조](https://github.com/juhyuny/home-work/assets/141771716/f2b6e1d8-5a4c-4673-a514-fca7878b6c62)
+![HTML:CSS 과제-마크업 구조](https://github.com/juhyuny/home-work/assets/141771716/f2b6e1d8-5a4c-4673-a514-fca7878b6c62){: width="400" height="400" align="left"}
 
 
 ### 마크업
-![HTML:CSS 과제-마크업](https://github.com/juhyuny/home-work/assets/141771716/6b9905d8-f3be-42cd-8283-2af671816cf0)
+![HTML:CSS 과제-마크업](https://github.com/juhyuny/home-work/assets/141771716/6b9905d8-f3be-42cd-8283-2af671816cf0){: width="400" height="400" align="right"}
 
 
 
@@ -151,7 +151,7 @@ https://juhyuny.github.io/home-work/mission-01/mission01.html
 # 문제 및 수정
 ---
 #### 접근성 문제
-  문제 : a 태그로 모두를 감싼 상황일 경우, 화면을 tab으로 접근하면 스크린리더로 읽힐 때 안에 있는 모든 요소들이 읽혀버림.
+  - 문제 : a 태그로 모두를 감싼 상황일 경우, 화면을 tab으로 접근하면 스크린리더로 읽힐 때 안에 있는 모든 요소들이 읽혀버림.
   - 수정 : focus되면서 접근되어야할 요소는 '구매하기'버튼이기 때문에 불필요한 a 태그를 지우고 '구매하기' 버튼을 감싸도록 마크업.
   
   
@@ -178,6 +178,56 @@ https://juhyuny.github.io/home-work/mission-01/mission01.html
 ### 수정된 HTML 마크업
 ---
 ![수정된 HTML 마크업 구조](./images/home-work-structure.png)
+
+
+```html
+   <article>
+    <h2 class="sr-only">오늘의 발견</h2>
+    <ul class="item-container">
+      <!-- item1 -->
+      <li class="item big-item">
+        <div class="item-title">
+          <img class="item-logo" src="images/logo-01.png" alt="오뚜기" />
+          <h3>따뜻한 차 향기</h3>
+        </div>
+        <img src="images/product-01.png" alt="오뚜기 꿀 생강차" />
+        <a href="/" class="btn-list">
+          <img src="images/button.png" alt="따뜻한 차 향기 구매하기" />
+          <div class="buy-btn">
+            <p>구매하기</p>
+            <img src="images/angle-right.png" alt="따뜻한 차 향기 구매하기" />
+          </div>
+        </a>
+      </li>
+      <!-- item2 -->
+      <li class="item small-item">
+        <img class="item-logo" src="images/logo-02.png" alt="카밀" />
+        <h3>핸드크림 모음</h3>
+        <img src="images/product-02.png" alt="카밀 핸드크림" />
+        <a href="/" class="btn-list">
+          <img src="images/button.png" alt="따뜻한 차 향기 구매하기" />
+          <div class="buy-btn">
+            <p>구매하기</p>
+            <img src="images/angle-right.png" alt="따뜻한 차 향기 구매하기" />
+          </div>
+        </a>
+      </li>
+      <!-- item3 -->
+      <li class="item small-item">
+        <img class="item-logo" src="images/logo-03.png" alt="곰곰" />
+        <h3>고소한 보리차</h3>
+        <img src="images/product-03.png" alt="곰곰 보리차" />
+        <a href="/" class="btn-list">
+          <img src="images/button.png" alt="따뜻한 차 향기 구매하기" />
+          <div class="buy-btn">
+            <p>구매하기</p>
+            <img src="images/angle-right.png" alt="따뜻한 차 향기 구매하기" />
+          </div>
+        </a>
+      </li>
+    </ul>
+  </article>
+```
 
 
 
