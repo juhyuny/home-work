@@ -4,17 +4,18 @@ https://juhyuny.github.io/home-work/mission-01/mission01.html
 
 # 1차 HTML 마크업 
 ---
-### 구조
-![HTML:CSS 과제-마크업 구조](https://github.com/juhyuny/home-work/assets/141771716/f2b6e1d8-5a4c-4673-a514-fca7878b6c62){: width="400" height="400" align="left"}
-
-
-### 마크업
-![HTML:CSS 과제-마크업](https://github.com/juhyuny/home-work/assets/141771716/6b9905d8-f3be-42cd-8283-2af671816cf0){: width="400" height="400" align="right"}
+### 구조와 마크업
+<figure>
+   <img src="https://github.com/juhyuny/home-work/assets/141771716/f2b6e1d8-5a4c-4673-a514-fca7878b6c62" width="400" height="400">
+   <img src="https://github.com/juhyuny/home-work/assets/141771716/6b9905d8-f3be-42cd-8283-2af671816cf0" width="400" height="400">
+</figure>
 
 
 
 
 1. article 태그를 사용하고 임의의 heading을 추가하여 .sr-only로 숨김 처리.
+
+
 2. 마우스를 올리고 hover되는 영역이 한 li영역의 전체라는 것을 보여주기 위해 a 태그로 li 내부의 있는 모든 태그를 감쌈.
    
 ```
@@ -23,6 +24,8 @@ https://juhyuny.github.io/home-work/mission-01/mission01.html
 
 
 3. logo 하단의 있는 글을 해당 카드의 헤딩역할로 h3 태그로 마크업.
+
+
 4. 큰 아이템과 작은아이템의 구조 차이
   - 큰 아이템 : 왼쪽에 배치될 img와 h3를 .item-title로 묶음.
 
@@ -149,6 +152,9 @@ https://juhyuny.github.io/home-work/mission-01/mission01.html
 
 
 # 문제 및 수정
+
+
+접근성과 표준문법을 고려한 마크업
 ---
 #### 접근성 문제
   - 문제 : a 태그로 모두를 감싼 상황일 경우, 화면을 tab으로 접근하면 스크린리더로 읽힐 때 안에 있는 모든 요소들이 읽혀버림.
@@ -162,6 +168,7 @@ https://juhyuny.github.io/home-work/mission-01/mission01.html
           <p> 
           Flow Content(플로우 컨텐츠). block 요소
           
+          
   - 수정 : 자식 요소 span 태그는 div태그로 바꾸고, 감싸는 span 태그는 hover 전 버튼과 hover 후 구매하기 버튼이므로 focusable 요소인 a 태그로 바꿈. 
   
 
@@ -169,13 +176,15 @@ https://juhyuny.github.io/home-work/mission-01/mission01.html
   - 문제
     1. 구매하기 버튼에 호버하면 구매하기 버튼이 보이면서 li의 border color가 변경되도록 시도.
     2. CSS에서는 자식을 호버했을 때 부모의 CSS는 변경할 수 없음. 자바스크립트로 구현해야함. 
+    
+    
   - 임시 해결 
     1. li에 호버했을 떄 li의 border가 변경되며 구매하기 버튼 보임.
     2. 링크 이동은 구매하기 버튼을 클릭했을 때만 됨.
   
   
   
-### 수정된 HTML 마크업
+# 수정된 구조와 마크업 
 ---
 ![수정된 HTML 마크업 구조](./images/home-work-structure.png)
 
