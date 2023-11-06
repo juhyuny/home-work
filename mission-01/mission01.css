@@ -134,9 +134,12 @@ li {
 }
 
 /* item hover */
-.item:hover .buy-btn, 
+/* .item:hover .buy-btn, 
 .item:hover{
   border: 1px solid var(--blue-600);
   display: flex;
-}
+} */
 
+.btn-list:hover .buy-btn {
+  display: flex;
+}
