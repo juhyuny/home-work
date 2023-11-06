@@ -4,12 +4,11 @@ https://juhyuny.github.io/home-work/mission-01/mission01.html
 
 # 1차 HTML 마크업 
 ---
-### 구조
-<img src="https://github.com/juhyuny/home-work/assets/141771716/f2b6e1d8-5a4c-4673-a514-fca7878b6c62" width="400" height="400" align="left" >
-
-
-### 마크업
-<img src="https://github.com/juhyuny/home-work/assets/141771716/6b9905d8-f3be-42cd-8283-2af671816cf0" width="400" height="400" align="right">
+### 구조와 마크업
+<figure>
+   <img src="https://github.com/juhyuny/home-work/assets/141771716/f2b6e1d8-5a4c-4673-a514-fca7878b6c62" width="400" height="400" align="left" >
+   <img src="https://github.com/juhyuny/home-work/assets/141771716/6b9905d8-f3be-42cd-8283-2af671816cf0" width="400" height="400" align="right">
+</figure>
 
 
 
