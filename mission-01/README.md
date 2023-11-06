@@ -239,4 +239,56 @@ https://juhyuny.github.io/home-work/mission-01/mission01.html
 ```
 
 
+# 자바스크립트 추가
+---
+CSS에서는 자식 요소를 선택해서 부모의 CSS를 바꾸는 것은 불가능함.
+
+### 자바스크립트 
+document.querySelectorAll로 .item과 .btn-list를 변수를 지정하고,
+.btn-list에 mouseover/mouseleave 할 때 이벤트 리스너가 실행되도록함.
+
+
+```javascript
+  const item = document.querySelector('.item');
+  const btnList = document.querySelector('.btn-list');
+
+  // const item = document.querySelectorAll('.item');
+  // const btnList = document.querySelectorAll('.btn-list');
+
+  const btnEventHandler = {
+    mouseover: function(){
+      item.style.borderColor = "#0074E9";
+    },
+    mouseleave: function(){
+      item.style.borderColor = "#c4c4c4";
+    }
+  };
+
+  btnList.addEventListener('mouseover', btnEventHandler);
+  btnList.addEventListener('mouseleave', btnEventHandler);
+
+```
+
+- 문제 1. querySelector로 하면 맨 첫번째 있는 선택자만 선택됨.
+- 문제 2. querySelectorAll 로 하면 이벤트 리스너 실행 안됨.
+
+- 해결
+  querySelectorAll는 index와 length를 사용해 반복문으로 순회.
+
+
+### 적용 코드
+```javascript
+  const item = document.querySelectorAll('.item');
+  const btnList = document.querySelectorAll('.btn-list');
+
+  for(let i = 0; i < btnList.length; i++) {
+    btnList[i].addEventListener('mouseover', function(){
+      item[i].style.border = "1px solid #0074E9";
+    });
+    btnList[i].addEventListener('mouseleave', function(){
+      item[i].style.border = "1px solid #c4c4c4";
+    });
+  };
+```
+
 
