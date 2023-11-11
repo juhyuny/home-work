@@ -1,0 +1,71 @@
+/* 변수 */
+:root {
+  --main-color: #ffffff;
+}
+
+/* 초기화 */
+* {margin:0; padding:0; box-sizing: border-box;}
+a {text-decoration: none;}
+li {list-style: none;}
+
+html, body {
+  height: 100vh;
+  color: var(--main-color);
+  font-family: "San Francisco", "Spoqa Han Sans", 'san-serif';
+}
+
+.login-inner {
+  height: 100%;
+  background-image: url(images/background-coffee.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-group {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  background-color: pink;
+}
+
+/* 로그인 타이틀 */
+.login-title {
+  background-color:aqua;
+  text-align: center;
+  /* display: flex;
+  flex-flow: column nowrap; 
+  align-items: center; */
+}
+
+.login-title h2 {
+  font-size: 2.25rem;
+  font-weight: 200;
+}
+
+.welcome-text {
+  margin-top: 24px;
+  /* text-align: center; */
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 10px;
+}
+
+.welcome-text p:first-child {
+  font-size: 1.125rem;
+}
+
+/* 로그인 인풋 */
+.login-input {
+  background-color: yellowgreen;
+}
+
+.email-input::after {
+  content: "이메일 입력 방법이 잘못되었습니다. (예:user@domain.io)";
+}
+
+
+/* 로그인 버튼 */
+.login-btn-container {
+  background-color: cadetblue;
+}
