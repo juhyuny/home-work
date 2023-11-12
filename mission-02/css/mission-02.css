@@ -1,0 +1,290 @@
+@import './reset.css';
+@import './base.css';
+
+.login-inner {
+  width: 100vww;
+  height: 100vh;
+  background: url(./../images/background-coffee.png) center / cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-group {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+}
+
+/* 로그인 타이틀 */
+.login-title {
+  width: 100%;
+  text-align: center;
+}
+
+.login-title h2 {
+  font-size: var(--designSystem--section-title);
+  font-weight: 200;
+}
+
+.welcome-text {
+  margin-top: 24px;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 8px;
+}
+
+.welcome-text p:first-child {
+  font-size: var(--card----dialog----headline);
+}
+
+.welcome-text p:nth-child(2) {
+  font-size: var(--card----dialog----element);
+}
+
+/* 로그인 인풋 */
+
+.login-input {
+  width: 540px;
+  margin-top: 100px;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 54px;
+}
+
+.login-set {
+  position: relative;
+}
+.login-set .user-input input::placeholder{
+  font-size: 1rem;
+  color: var(--grayscale----white);
+  opacity: 0;
+}
+
+.login-set label {
+  position: absolute;
+  top: 1rem;
+  left: .5rem;
+  font-size: var(--card----dialog----headline);
+}
+
+.user-input {
+  display: grid;
+  position: relative;
+  border-bottom: .5px solid var(--grayscale----white);
+}
+
+.user-input input {
+  height: 48px;
+  background-color: transparent;
+  border: 0;
+  border-radius: 5px;
+  padding: 1rem 0 0 .5rem;
+  color: #fff;
+}
+.user-input input:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--primary----blue-1);
+}
+
+/* 이메일 입력 상태 아이콘 */
+
+.input-icon {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  display:flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.input-status {
+  width: 16px;
+  height: 16px;
+  display: none;
+}
+
+.form-message {  
+  position: absolute;
+  top: 56px;
+  left: 8px;
+  font-style: normal;
+  font-size: 0.75rem;
+  display: none;
+}
+
+/* 패스워드 토글 */
+.button-password {
+  display: none;
+  background: transparent url(/images/input-password-visible.svg);
+}
+
+
+/* 이메일 저장 버튼 */
+.save-email {
+  margin-top: 15px;
+  font-size: 0.75rem;
+  display: flex;
+  flex-flow: row-reverse;
+  gap: 4px;
+}
+
+.save-email label {
+  margin-top: -2px;
+}
+
+/* 이메일 저장 checkbox 커스텀*/
+.save-email input[type="checkbox"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.save-email label {
+  display: inline-block;
+  position: relative;
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+.save-email label::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background-image: url(/images/checkbox-uncheck.svg);
+}
+
+.save-email label.is-active::before { 
+  background-image: url(/images/checkbox-checked.svg);
+}
+
+/* 로그인 버튼 */
+.login-btn-container {
+  margin-top: 70px;
+  display: flex;
+  gap: 1.25rem;
+}
+
+.login-btn-container .login-btn {
+  width: 16.25rem;
+  height: 48px;
+  position: relative;
+  border-radius: .5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 48px;
+  cursor: pointer;
+}
+.login-btn-container .login-btn::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 14px;
+  right: 14px;
+}
+
+.signup-btn {
+  background: transparent;
+  color: var(--grayscale----white);
+  border: 1px solid var(--grayscale----white);
+  text-align: center;
+}
+
+.login-summit {
+  color: var(--primary----blue-1);
+}
+
+.login-summit::after {
+  background-image: url(/images/arrow-right.svg);
+}
+
+.signup-btn::after {
+  background-image: url(/images/arrow-right-white.svg);
+}
+
+/* input 상태 */
+
+/* focus */
+.login-set.is-focus label,
+.login-set.is-valid label,
+.login-set.is-invalid label,
+.login-set.is-visible label {
+  top: 0;
+  left: 0;
+  font-size: var(--card----dialog----element);
+}
+
+.user-input input:focus::placeholder,
+.login-set.is-focus input::placeholder,
+.login-set.is-focus input::placeholder {
+  opacity: .7;
+}
+
+.login-set.is-focus .button-password {
+  display: inline;
+}
+
+/* is-valid */
+.login-set.is-valid .input-status {
+  display: inline-block;
+  background-image: url(/images/input-valid.svg);
+}
+
+.login-set.is-focus .user-input{
+  border-bottom: 2px solid var(--grayscale----white);
+}
+
+.login-set.is-invalid .input-status {
+  display: block;
+  background-image: url(/images/input-invalid.svg);
+}
+
+.login-set.is-invalid .form-message {
+  display: block;
+}
+
+.sign-password.is-invalid .password-input {
+  margin-bottom: 20px;
+}
+.login-set.is-invalid .button-password {
+  display: block;
+}
+
+/* visible */
+.is-visible .button-password {
+  background-image: url(/images/input-password-hidden.svg);
+}
+
+/* 반응형 */
+/* 모바일 화면 */
+@media (max-width: 600px) {
+  
+  .login-group {
+    width: 100%;
+    padding: 0 32px;
+  }
+  
+  .login-input {
+    width: 100%;
+  }
+  
+  .login-btn-container {
+    width: 100%;
+    flex-flow: column nowrap;
+  }
+   
+  .login-btn-container .login-btn {
+    width: 100%;
+  }
+}

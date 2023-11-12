@@ -7,7 +7,7 @@
   <title>Ediya - 로그인</title>
   <link rel="stylesheet prefetch"
     href="https://gist.githubusercontent.com/mfd/614e2e80a22b878bde63cb471cbe677e/raw/eef2aabfd0d588d43285431186a0cf70305ceb80/sanfrancisco-font.css">
-  <link rel="stylesheet" href="mission-02.css" />
+  <link rel="stylesheet" href="./css/mission-02.css" />
 </head>
 
 <body>
@@ -24,31 +24,36 @@
         </div>
       </div>
       <!-- 로그인 입력 폼 -->
-      <form class="login-input">
+      <form action="/" class="login-input">
         <div class="login-set sign-email">
           <label for="userEmail" class="user-email">이메일</label>
-          <div class="input email-input">
-            <input type="email" id="userEmail" />
-            <span class="email-status"></span>
+          <div class="user-input email-input">
+            <input type="email" id="userEmail" name="userEmail" placeholder="example@email.com" />
+            <span class="input-icon input-status"></span>
+            <span class="form-message">이메일 입력 방법이 잘못되었습니다. (예:user@domain.io)</span>
           </div>
         </div>
         <div class="login-set sign-password">
           <label for="userPassword" class="user-password">비밀번호</label>
-          <div class="input">
-            <input type="password" class="userPassword" />
-            <button type="button" class="button-toggle">눈 가리기</button>
+          <div class="user-input password-input">
+            <input type="password" id="userPassword" name="userPassword" placeholder="숫자, 영어 조합 6자 이상" minlength="6" />
+            <div class="input-icon">
+              <button type="button" class="button-password small-icon"><span class="sr-only">눈 가리기</span></button>
+              <span class="input-status small-icon"></span>
+            </div>
+            <em class="form-message">패스워드는 숫자, 영어 조합 6자 이상 입력해야 합니다.</em>
           </div>
         </div>
       </form>
       <!-- 이메일 저장 체크 -->
       <div class="save-email">
-        <input type="checkbox" />
-        <span>이메일 저장</span>
+        <label for="saveEmail" tabindex="0">이메일 저장</label>
+        <input type="checkbox" id="saveEmail" class="save-btn" />
       </div>
       <!-- 로그인/회원가입 버튼 -->
       <div class="login-btn-container">
-        <button class="login-summit">로그인</button>
-        <button class="signup">회원가입</button>
+        <button class="login-btn login-summit">로그인</button>
+        <a href="/" class="login-btn signup-btn">회원가입</a>
       </div>
 
 

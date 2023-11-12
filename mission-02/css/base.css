@@ -1,0 +1,59 @@
+/* 변수 */
+:root {
+  /* Color styles */
+  --primary----blue-1: #24388d;
+  --primary----blue-2: #5b6aa9;
+  --primary----blue-3: #919bc6;
+  --primary----blue-4: #c8cde2;
+  --secondary----light-blue-1: #bae5fb;
+  --secondary----light-blue-2: #cbebfc;
+  --secondary----light-blue-3: #dcf2fd;
+  --secondary----light-blue-4: #eef8fe;
+  --grayscale----white: #fefefe;
+  --grayscale----snow: #f5f5f5;
+  --grayscale----gray: #616161;
+  --grayscale----light-gray: #878787;
+  --grayscale----dark-gray: #14182c;
+  --grayscale----dark-black: #14182c;
+  --grayscale----black: #0f0f0f;
+
+  /* Text-size styles */
+  --designSystem--section-title: 2.25rem;
+  --menu----link: 1rem;
+  --card----label: 1rem;
+  --card----dialog----headline: 1.12rem;
+  --card----dialog----sub-headline: 0.88rem;
+  --card----dialog----description: 1rem;
+  --card----dialog----element: 0.81rem;
+}
+
+a {text-decoration: none; color: inherit; display: block;}
+
+html, body {
+  height: 100vh;
+  color: var(--grayscale----white);
+  font-family: "San Francisco", "Spoqa Han Sans", 'san-serif';
+  font-size: 16px;
+  background-color: var(--primary----blue-1);
+}
+
+button {border: none;}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: polygon(0 0, 0 0, 0 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.small-icon {
+  width: 16px;
+  height: 16px;
+  border: none;
+}
