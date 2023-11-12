@@ -116,7 +116,7 @@
 /* 패스워드 토글 */
 .button-password {
   display: none;
-  background: transparent url(/images/input-password-visible.svg);
+  background: transparent url(./../images/input-password-visible.svg);
 }
 
 
@@ -160,11 +160,11 @@
   width: 16px;
   height: 16px;
   display: inline-block;
-  background-image: url(/images/checkbox-uncheck.svg);
+  background-image: url(./../images/checkbox-uncheck.svg);
 }
 
 .save-email label.is-active::before { 
-  background-image: url(/images/checkbox-checked.svg);
+  background-image: url(./../images/checkbox-checked.svg);
 }
 
 /* 로그인 버튼 */
@@ -206,11 +206,11 @@
 }
 
 .login-summit::after {
-  background-image: url(/images/arrow-right.svg);
+  background-image: url(./../images/arrow-right.svg);
 }
 
 .signup-btn::after {
-  background-image: url(/images/arrow-right-white.svg);
+  background-image: url(./../images/arrow-right-white.svg);
 }
 
 /* input 상태 */
@@ -238,7 +238,7 @@
 /* is-valid */
 .login-set.is-valid .input-status {
   display: inline-block;
-  background-image: url(/images/input-valid.svg);
+  background-image: url(./../images/input-valid.svg);
 }
 
 .login-set.is-focus .user-input{
@@ -247,7 +247,7 @@
 
 .login-set.is-invalid .input-status {
   display: block;
-  background-image: url(/images/input-invalid.svg);
+  background-image: url(./../images/input-invalid.svg);
 }
 
 .login-set.is-invalid .form-message {
@@ -263,7 +263,7 @@
 
 /* visible */
 .is-visible .button-password {
-  background-image: url(/images/input-password-hidden.svg);
+  background-image: url(./../images/input-password-hidden.svg);
 }
 
 /* 반응형 */
