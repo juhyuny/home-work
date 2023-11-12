@@ -60,7 +60,9 @@
 
 ## 조건
 #### 입력 폼 상태 class
-이메일 폼 영역과 패스워드 폼 각 영역전체(.login-set)에 상태변화 class를 추가하여 해당 자식들의 css가 변경되도록 함.
+- 이메일 폼 영역과 패스워드 폼 각 영역전체(.login-set)에 상태변화 class를 추가하여 해당 자식들의 css가 변경되도록 함.
+- 체크박스는 .is-active를 가지면 체크박스의 이미지가 checked 이미지로 변경되도록 함.
+
 
 1. email
     - is-focus
@@ -76,8 +78,10 @@
     - is-active
 
 
+
 #### 모바일 반응형
 @media (max-width: 600;) {}
+
 
 ```css
 
