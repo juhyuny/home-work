@@ -43,8 +43,7 @@
 }
 
 /* 로그인 인풋 */
-
-.login-input {
+.login-form {
   width: 540px;
   margin-top: 100px;
   display: flex;
@@ -54,8 +53,9 @@
 
 .login-set {
   position: relative;
+  border-bottom: .5px solid var(--grayscale----white);
 }
-.login-set .user-input input::placeholder{
+.login-set .user-input::placeholder{
   font-size: 1rem;
   color: var(--grayscale----white);
   opacity: 0;
@@ -66,29 +66,26 @@
   top: 1rem;
   left: .5rem;
   font-size: var(--card----dialog----headline);
+  transition: all 500ms;
 }
 
 .user-input {
-  display: grid;
-  position: relative;
-  border-bottom: .5px solid var(--grayscale----white);
-}
-
-.user-input input {
+  width: 100%;
   height: 48px;
   background-color: transparent;
   border: 0;
   border-radius: 5px;
   padding: 1rem 0 0 .5rem;
   color: #fff;
+  position: relative;
 }
-.user-input input:focus {
+
+.user-input:focus {
   outline: none;
   box-shadow: 0 0 0 3px var(--primary----blue-1);
 }
 
 /* 이메일 입력 상태 아이콘 */
-
 .input-icon {
   position: absolute;
   right: 8px;
@@ -118,7 +115,6 @@
   display: none;
   background: transparent url(./../images/input-password-visible.png);
 }
-
 
 /* 이메일 저장 버튼 */
 .save-email {
@@ -162,7 +158,7 @@
   display: inline-block;
   background-image: url(./../images/checkbox-uncheck.png);
 }
-
+/* 이메일 저장 is-active */
 .save-email label.is-active::before { 
   background-image: url(./../images/checkbox-checked.png);
 }
@@ -225,10 +221,16 @@
   font-size: var(--card----dialog----element);
 }
 
-.user-input input:focus::placeholder,
+.user-input:focus::placeholder,
 .login-set.is-focus input::placeholder,
 .login-set.is-focus input::placeholder {
   opacity: .7;
+}
+
+.login-set.is-focus,
+.login-set.is-valid,
+.login-set.is-invalid {
+  border-bottom: 2px solid var(--grayscale----white);
 }
 
 .login-set.is-focus .button-password {
@@ -241,10 +243,7 @@
   background-image: url(./../images/input-valid.png);
 }
 
-.login-set.is-focus .user-input{
-  border-bottom: 2px solid var(--grayscale----white);
-}
-
+/* is-invalid */
 .login-set.is-invalid .input-status {
   display: block;
   background-image: url(./../images/input-invalid.png);
@@ -254,7 +253,7 @@
   display: block;
 }
 
-.sign-password.is-invalid .password-input {
+.login-password.is-invalid .password-input {
   margin-bottom: 20px;
 }
 .login-set.is-invalid .button-password {
@@ -275,7 +274,7 @@
     padding: 0 32px;
   }
   
-  .login-input {
+  .login-form {
     width: 100%;
   }
   
