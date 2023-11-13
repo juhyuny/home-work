@@ -2,9 +2,16 @@
 
 
 ## HTML 마크업 구조 이미지
+기존 마크업 구조
 ![mission-02-markup](https://github.com/juhyuny/home-work/assets/141771716/77ead259-8006-431e-adb3-bf87d2a8ffc6)
 
-## HTML 구조
+
+수정된 마크업 구조
+- form 태그 내부 구조 변경
+![mission-02-markup-edit](https://github.com/juhyuny/home-work/assets/141771716/2c1bef6b-9538-44f0-8d87-9709714ec99b)
+
+
+## HTML 구조(수정)
 ```html
 
   <section class="login-inner">
@@ -20,24 +27,23 @@
       </div>
       <!-- 로그인 입력 폼 -->
       <form action="/" class="login-form">
+        <!-- 이메일 입력 인풋 -->
         <div class="login-set login-email">
           <label for="userEmail" class="user-email">이메일</label>
-          <div class="user-input email-input">
-            <input type="email" id="userEmail" name="userEmail" placeholder="example@email.com" />
-            <span class="input-icon input-status small-icon"></span>
-            <em class="form-message">이메일 입력 방법이 잘못되었습니다. (예:user@domain.io)</em>
-          </div>
+          <input type="email" id="userEmail" name="userEmail" placeholder="example@email.com" class="user-input" />
+          <span class="input-icon input-status small-icon"></span>
+          <em class="form-message">이메일 입력 방법이 잘못되었습니다. (예:user@domain.io)</em>
         </div>
+        <!-- 비밀번호 입력 인풋 -->
         <div class="login-set login-password">
           <label for="userPassword" class="user-password">비밀번호</label>
-          <div class="user-input password-input">
-            <input type="password" id="userPassword" name="userPassword" placeholder="숫자, 영어 조합 6자 이상" minlength="6" />
-            <div class="input-icon">
-              <button type="button" class="button-password small-icon"><span class="sr-only">눈 가리기</span></button>
-              <span class="input-status small-icon"></span>
-            </div>
-            <em class="form-message">패스워드는 숫자, 영어 조합 6자 이상 입력해야 합니다.</em>
+          <input type="password" id="userPassword" name="userPassword" placeholder="숫자, 영어 조합 6자 이상" minlength="6"
+            class="user-input" />
+          <div class="input-icon">
+            <button type="button" class="button-password small-icon"><span class="sr-only">비밀번호 보기</span></button>
+            <span class="input-status small-icon"></span>
           </div>
+          <em class="form-message">패스워드는 숫자, 영어 조합 6자 이상 입력해야 합니다.</em>
         </div>
       </form>
       <!-- 이메일 저장 체크 -->
@@ -50,7 +56,6 @@
         <button class="login-btn login-summit">로그인</button>
         <a href="/" class="login-btn signup-btn">회원가입</a>
       </div>
-
 
     </div>
   </section>
