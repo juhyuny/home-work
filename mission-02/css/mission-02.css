@@ -1,10 +1,13 @@
 @import './reset.css';
 @import './base.css';
+@import './components.css';
+
 
 .login-inner {
-  width: 100vww;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background: url(./../images/background-coffee.png) center / cover no-repeat;
+  color: var(--grayscale----white);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -268,7 +271,6 @@
 /* 반응형 */
 /* 모바일 화면 */
 @media (max-width: 600px) {
-  
   .login-group {
     width: 100%;
     padding: 0 32px;

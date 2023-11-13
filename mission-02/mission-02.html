@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
   <title>Ediya - 로그인</title>
   <link rel="stylesheet prefetch"
     href="https://gist.githubusercontent.com/mfd/614e2e80a22b878bde63cb471cbe677e/raw/eef2aabfd0d588d43285431186a0cf70305ceb80/sanfrancisco-font.css">
@@ -11,6 +11,45 @@
 </head>
 
 <body>
+  <!-- 헤더 -->
+  <header class="header">
+    <div class="header-inner">
+      <h1 class="brand">
+        <a href="#" class="logo-link light-logo">
+          <img src="./../images/brand-lightmode.svg" alt="EDIYA COFFEE" />
+        </a>
+      </h1>
+      <button type="button" class="button button-bg button-burger" aria-label="메뉴 열기">
+        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17.1739 30H32.8261C34.3913 30 34.3913 32 32.8261 32H17.1739C15.6087 32 15.6087 30 17.1739 30Z"
+            fill="#616161" />
+          <path d="M17.1739 24H32.8261C34.3913 24 34.3913 26 32.8261 26H17.1739C15.6087 26 15.6087 24 17.1739 24Z"
+            fill="#616161" />
+          <path d="M17.1739 18H32.8261C34.3913 18 34.3913 20 32.8261 20H17.1739C15.6087 20 15.6087 18 17.1739 18Z"
+            fill="#616161" />
+        </svg>
+      </button>
+      <nav class="navigation" aria-label="메인 메뉴">
+        <ul>
+          <li class="is-active"><a href="#">로그인</a></li>
+          <li><a href="#">회원가입</a></li>
+          <li><a href="#">이디야 음료</a></li>
+          <li><a href="#">이디야 뉴스</a></li>
+          <li><a href="#">매장 찾기</a></li>
+        </ul>
+        <button type="button" class="button button-bg button-none button-scale button-close" aria-label="메뉴 닫기">
+          <span class="close" aria-hidden="true">
+            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M31.4728 17.1493C31.6637 16.9497 31.9732 16.9497 32.1641 17.1493C32.355 17.3488 32.355 17.6724 32.1641 17.8719L25.6912 24.6386L32.8553 32.128C33.0462 32.3275 33.0462 32.6511 32.8553 32.8506C32.6645 33.0501 32.355 33.0501 32.1641 32.8506L25 25.3612L17.8359 32.8506C17.645 33.0501 17.3355 33.0501 17.1446 32.8506C16.9537 32.6511 16.9537 32.3275 17.1446 32.128L24.3087 24.6386L17.8359 17.8719C17.645 17.6724 17.645 17.3488 17.8359 17.1493C18.0268 16.9497 18.3363 16.9497 18.5271 17.1493L25 23.916L31.4728 17.1493Z"
+                fill="#F5F5F5" />
+            </svg>
+
+          </span>
+        </button>
+      </nav>
+    </div>
+  </header>
 
   <section class="login-inner">
     <div class="login-group">
@@ -25,18 +64,18 @@
       </div>
       <!-- 로그인 입력 폼 -->
       <form action="/" class="login-form">
+        <!-- 이메일 입력 인풋 -->
         <div class="login-set login-email">
           <label for="userEmail" class="user-email">이메일</label>
           <input type="email" id="userEmail" name="userEmail" placeholder="example@email.com" class="user-input" />
-          <!-- <div class="email-input"> -->
           <span class="input-icon input-status small-icon"></span>
           <em class="form-message">이메일 입력 방법이 잘못되었습니다. (예:user@domain.io)</em>
         </div>
+        <!-- 비밀번호 입력 인풋 -->
         <div class="login-set login-password">
           <label for="userPassword" class="user-password">비밀번호</label>
           <input type="password" id="userPassword" name="userPassword" placeholder="숫자, 영어 조합 6자 이상" minlength="6"
             class="user-input" />
-          <!-- <div class="password-input"> -->
           <div class="input-icon">
             <button type="button" class="button-password small-icon"><span class="sr-only">비밀번호 보기</span></button>
             <span class="input-status small-icon"></span>

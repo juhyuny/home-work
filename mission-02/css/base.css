@@ -18,23 +18,27 @@
   --grayscale----black: #0f0f0f;
 
   /* Text-size styles */
-  --designSystem--section-title: 2.25rem;
-  --menu----link: 1rem;
-  --card----label: 1rem;
-  --card----dialog----headline: 1.12rem;
-  --card----dialog----sub-headline: 0.88rem;
-  --card----dialog----description: 1rem;
-  --card----dialog----element: 0.81rem;
+  /* base size 16px */
+  --designSystem--section-title: 2.25rem;   /* 36px */
+  --menu----link: 1rem;   /* 16px */
+  --card----label: 1rem;  /* 16px */
+  --card----dialog----headline: 1.12rem;   /* 18px */
+  --card----dialog----sub-headline: 0.88rem;  /* 14px */
+  --card----dialog----description: 1rem;  /* 16px */
+  --card----dialog----element: 0.81rem;  /* 13px */
 }
 
-a {text-decoration: none; color: inherit; display: block;}
+
+a {text-decoration: none; display: block; color: inherit}
 
 html, body {
+  width: 100vw;
+  overflow-x: hidden;
   height: 100vh;
-  color: var(--grayscale----white);
   font-family: "San Francisco", "Spoqa Han Sans", 'san-serif';
   font-size: 16px;
   background-color: var(--primary----blue-1);
+  /* color: var(--primary----blue-1) */
 }
 
 button {border: none;}
